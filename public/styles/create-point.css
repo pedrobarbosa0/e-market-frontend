@@ -84,7 +84,7 @@ form .field-group2 {
 form .field-group2 input{
     display: flex;
     align-items: center;
-    width: 170px;
+    width: 190px;
 }
 
 form input, form select {
@@ -111,6 +111,11 @@ form .field-group .field + .field {
     margin-left: 24px;
 }
 
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
 form button {
     width: 260px;
     height: 56px;
@@ -126,6 +131,26 @@ form button {
 
 form button:hover {
     background-color: #00efd1;
+}
+
+.cancelar {
+    width: 260px;
+    height: 56px;
+    background-color: #eb4731;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 15px;
+    margin-top: 40px;
+    transition: background-color 400ms;
+}
+
+.cancelar:hover {
+    background-color: #FF0000;
+    color: white;
+    border: 20px;
+    border-color: #eb4731;
 }
 
 .items-grid {
