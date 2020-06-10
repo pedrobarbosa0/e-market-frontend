@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-create-point" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/deliveryman-modal.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <form action="/savepoint" method="POST">
+        <h1>Cadastro</h1>
+        <fieldset>
+            <legend>
+                <h2>Dados</h2>
+            </legend>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" required="required">
+                </div>
+                <div class="field">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" name="sobrenome">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" required="required">
+                </div>
+                <div class="field">
+                    <label for="username">Nome de Usuário</label>
+                    <input type="text" name="username" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" required="required">
+                </div>
+                <div class="field">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="marca">Marca</label>
+                    <input type="text" name="marca" required="required">
+                </div>
+                <div class="field">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" name="modelo" required="required">
+                </div>
+            </div>
+            <div class="field-group2">
+                <div class="field">
+                    <label for="ano">Ano</label>
+                    <input type="number" name="ano" required="required">
+                </div>
+                <div class="field">
+                    <label for="cor">Cor</label>
+                    <input type="text" name="cor" required="required">
+                </div>
+                <div class="field">
+                    <label for="placa">Placa</label>
+                    <input type="text" name="placa" required="required">
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit">Criar Conta</button>
+    </form>
+{% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {% include "partials/create-deliveryman-modal.html" %}
+    {% endif %}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="/scripts/create-deliveryman.js"></script>
+{% endblock scripts %}

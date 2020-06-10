@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/deliveryman-dashboard.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header-deliveryman-dashboard.html" %}
+    <main>
+        <div class="dashboard">
+            <h4>
+                <a href="/deliveryman-dashboard-edit"><strong>Editar Perfil</strong></a>
+            </h4>
+            <h4>
+                <a href="/deliveryman-dashboard-history"><strong>Histórico de Entregas</strong></a>
+            </h4>
+            <h4>
+                <a href="#"><strong>Pagamentos</strong></a>
+            </h4>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="../assets/clock-delivery.svg" alt="Entrega Em andamento ou em espera">
+                <h1>Entrega Em espera/andamento</h1>
+                <h3>Supermercado Z</h3>
+                <p>
+                    Feedback: *****
+                    <br/>
+                    Maceió, Alagoas
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
+                    Nº 260
+                    <br/>
+                    Data: 06/06/2020
+                    <br/>
+                    Hora: 11:26
+                </p>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

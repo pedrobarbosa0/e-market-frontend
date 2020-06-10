@@ -1,0 +1,81 @@
+#login-modal {
+    background-color: #0e0a14ef;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+#login-modal.hide {
+    display: none;
+}
+
+#login-modal .content {
+    color: white;
+    width: 350px;
+}
+
+#login-modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+#login-modal .header a {
+    background-image: url(../assets/x.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.1px;
+}
+
+#login-modal .header h1 {
+    color: white;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+#login-modal form label {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#login-modal form .field {
+    display: flex;
+}
+
+#login-modal form input {
+    margin-bottom: 10px;
+    flex: 1;
+    background-color: #f0f0f5;
+    border-radius: 8px 8px 8px 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6c6c80;
+}
+
+#login-modal form button {
+    width: 350px;
+    height: 50px;
+    background-color: #00acea;
+    border: 0;
+    border-radius: 8px 8px 8px 8px; 
+}
+
+#login-modal form button:hover {
+    background-color: #00efd1;
+}
+
+#login-modal form button label {
+    margin-top: 4px;
+    color: white;
+}

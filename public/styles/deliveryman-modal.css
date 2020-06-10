@@ -1,0 +1,69 @@
+#deliveryman-modal {
+    background-color: #0e0a14ef;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+
+#deliveryman-modal.hide {
+    display: none;
+}
+
+#deliveryman-modal .content {
+    color: white;
+    width: 420px;
+}
+
+#deliveryman-modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+#deliveryman-modal .header a {
+    background-image: url(../assets/x.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.1px;
+}
+
+#deliveryman-modal .header h1 {
+    color: white;
+    font-size: 24px;
+    line-height: 42px;
+}
+
+#deliveryman-modal form button {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 45px;
+    background-color: #00acea;
+    border-radius: 8px 8px 8px 8px; 
+    border: none;
+}
+
+#deliveryman-modal form button:hover {
+    background-color: #00efd1;
+}
+
+#deliveryman-modal form button label {
+    color: white;
+}
+
+#deliveryman-modal.point .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#deliveryman-modal.point h1 {
+    color: white;
+    margin-top: 32px;
+}

@@ -1,0 +1,6 @@
+Agradecimento e créditos para a equipe da rocketseat, que foi fundamental na construção do front-end.
+
+Ícones
+    Equipe da rocketseat
+    "Icons made by Freepik from www.flaticon.com"
+    "Icon made by Kiranshastry from www.flaticon.com"

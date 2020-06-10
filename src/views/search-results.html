@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <main>
+        <h4>
+            <strong>2 estabelecimentos</strong>
+            encontrados
+        </h4>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80">
+                <h1>Supermercado X</h1>
+                <h3>Aberto 24hrs</h3>
+                <p>
+                    Maceió, Alagoas/AL
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
+                    Nº 260
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1591183843088-8ea6a3470843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1448&q=80" alt="Papersider">
+                <h1>Supermercado Y</h1>
+                <h3>Aberto 24hrs</h3>
+                <p>
+                    Maceió, Alagoas/AL
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
+                    Nº 260
+                </p>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

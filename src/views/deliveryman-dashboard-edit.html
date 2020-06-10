@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-create-point" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <form action="">
+        <h1>Editar Informações</h1>
+        <fieldset>
+            <legend>
+                <h2>Dados</h2>
+            </legend>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Sobrenome</label>
+                    <input type="text" name="sobrenome">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">E-Mail</label>
+                    <input type="email" name="email" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Nome de Usuário</label>
+                    <input type="text" name="username" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Senha</label>
+                    <input type="password" name="senha" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">CPF</label>
+                    <input type="text" name="cpf" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Marca</label>
+                    <input type="text" name="marca" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Modelo</label>
+                    <input type="text" name="text" required="required">
+                </div>
+            </div>
+            <div class="field-group2">
+                <div class="field">
+                    <label for="name">Ano</label>
+                    <input type="int" name="ano" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Cor</label>
+                    <input type="text" name="cor" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Placa</label>
+                    <input type="text" name="placa" required="required">
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit">Editar Conta</button>
+    </form>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}

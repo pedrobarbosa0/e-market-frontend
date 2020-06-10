@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-create-point" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <form action="">
+        <h1>Cadastro</h1>
+        <fieldset>
+            <legend>
+                <h2>Dados</h2>
+            </legend>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Nome do Estabelecimento</label>
+                    <input type="text" name="name" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">E-Mail</label>
+                    <input type="email" name="email" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Nome de Usuário</label>
+                    <input type="text" name="username" required="required">
+                </div>
+            </div>
+                <div class="field-group">
+                <div class="field">
+                    <label for="name">Senha</label>
+                    <input type="password" name="senha" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">CNPJ</label>
+                    <input type="text" name="cnpj" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="address2">Bairro</label>
+                    <input type="text" name="address2" required="required">
+                </div>
+                <div class="field">
+                    <label for="address2">Rua</label>
+                    <input type="text" name="address" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="address">Complemento</label>
+                    <input type="text" name="address2">
+                </div>
+                <div class="field">
+                    <label for="address">Nº</label>
+                    <input type="number" name="address" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="state">Estado</label>
+                    <select name="uf" required="required">
+                        <option value="">Selecione o Estado</option>
+                    </select>
+                    <input type="hidden" name="state">
+                </div>
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <select name="city" disabled="disabled" required="required">
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit">Criar Conta</button>
+    </form>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}

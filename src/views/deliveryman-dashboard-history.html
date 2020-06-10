@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/deliveryman-dashboard.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <main>
+        <h4>
+            <strong>2 entregas</strong>
+            encontradas
+        </h4>
+        <div class="cards">
+            <div class="card">
+                <img src="../assets/completed-delivery.svg" alt="Entrega Concluída">
+                <h1>Entrega Concluída</h1>
+                <h3>Supermercado X</h3>
+                <p>
+                    Feedback: *****
+                    <br/>
+                    Maceió, Alagoas
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
+                    Nº 260
+                    <br/>
+                    Data: 06/06/2020
+                    <br/>
+                    Hora: 11:26
+                </p>
+            </div>
+            <div class="card">
+                <img src="../assets/delivery-not-completed.svg" alt="Entrega não concluída ou rejeitada">
+                <h1>Entrega Rejeitada</h1>
+                <h3>Supermercado Y</h3>
+                <p>
+                    Feedback: *
+                    <br/>
+                    Maceió, Alagoas
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
+                    Nº 260
+                    <br/>
+                    Data: 06/06/2020
+                    <br/>
+                    Hora: 11:00
+                </p>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-home" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/login-modal.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+        <header>
+            <div>
+                <img src="/assets/supermercado.svg" alt="Logomarca">
+                <h3>E-Market</h3>
+            </div>
+            <a href="#">
+                <span></span>
+                <h3>Login</h3>
+            </a>
+        </header>
+        <main>
+            <h1 class="red">Faça suas compras em casa</h1>
+            <p>Crie uma conta e descubra os mercados próximos a você</p>
+            <a href="#">
+                <span></span>
+                <strong>Cadastre-se</strong>
+            </a>
+        </main>
+    </div>
+{% endblock content %}
+
+{% block loginModal %}
+    {% include "partials/login-modal.html" %}
+{% endblock loginModal %}
+
+{% block modal %}
+    {% include "partials/index-modal.html" %}
+{% endblock modal %}
+
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %}
