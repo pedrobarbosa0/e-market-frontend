@@ -90,11 +90,14 @@ server.post("/savepoint-marketplace", (req, res) => {
 server.get("/deliveryman-dashboard", (req, res ) => {
     return res.render("deliveryman-dashboard.html")
 })
+server.get("/deliveryman-profile", (req, res ) => {
+    return res.render("deliveryman-profile.html")
+})
 server.get("/deliveryman-dashboard-history", (req, res ) => {
     return res.render("deliveryman-dashboard-history.html")
 })
-server.get("/deliveryman-dashboard-edit", (req, res ) => {
-    return res.render("deliveryman-dashboard-edit.html")
+server.get("/deliveryman-edit", (req, res ) => {
+    return res.render("deliveryman-edit.html")
 })
 server.get("/estabelecimento-list-pedidos", (req, res ) => {
     return res.render("estabelecimento-list-pedidos.html")

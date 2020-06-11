@@ -85,6 +85,64 @@ main .card p {
     color: #6c6c80;
 }
 
+main .card3 {
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+main .card3 h1 {
+    margin-top: 32px;
+    font-size: 32px;
+    line-height: 41px;
+    color: #322153;
+}
+
+main .card3 p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #6c6c80;
+}
+
+main .cards2 {
+    display: grid;
+    grid-template-columns:  1fr 1fr 0fr;
+    gap: 24px;
+}
+
+main .card2 {
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+main .card2 h1 {
+    margin-top: 32px;
+    font-size: 32px;
+    line-height: 41px;
+    color: #322153;
+}
+
+main .card2 p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #6c6c80;
+}
+
+main .card3 img {
+    width: 80%;
+    height: 200px;
+    object-fit: none;
+    border-radius: 8px 8px 0 0;
+}
+
+main .card2 img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
 body {
     background-color: white;
 }
@@ -99,4 +157,46 @@ body::after {
     bottom: 0;
     height: 17rem;
     z-index: -1;
+}
+
+div .button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aceitar {
+    width: 200px;
+    height: 56px;
+    background-color: #00acea;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 25px;
+    transition: background-color 400ms;
+}
+
+.aceitar:hover {
+    background-color: #00efd1;
+}
+
+.cancelar {
+    width: 100px;
+    height: 56px;
+    background-color: #eb4731;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 15px;
+    margin-top: 25px;
+    transition: background-color 400ms;
+}
+
+.cancelar:hover {
+    background-color: #FF0000;
+    color: white;
+    border: 20px;
+    border-color: #eb4731;
 }

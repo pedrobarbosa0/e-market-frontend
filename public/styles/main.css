@@ -39,14 +39,23 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: 15px;
     border-radius: 8px 8px 8px 8px;
+    transition: 400ms;
+}
+
+.btn-primary:hover {
+    background-color: #00efcf;
 }
 
 .btn-danger {
     width: 120px;
     height: 50px;
-    background-color: #FF4D27;
+    background-color: #eb4731;
     border: 0;
     color: white;
     font-size: 15px;
     border-radius: 8px 8px 8px 8px;
+}
+
+.btn-danger:hover {
+    background-color: #FF0000;
 }

@@ -44,6 +44,9 @@
                     <input type="text" name="cpf" required="required">
                 </div>
             </div>
+            <legend>
+                <h2>Dados do Veículo</h2>
+            </legend>
             <div class="field-group">
                 <div class="field">
                     <label for="name">Marca</label>
@@ -69,7 +72,10 @@
                 </div>
             </div>
         </fieldset>
-        <button type="submit">Editar Conta</button>
+        <div class="button">
+            <button type="submit" href="/" class="cancelar">Cancelar</button>
+            <button type="submit">Editar Conta</button>
+        </div>
     </form>
 {% endblock content %}
 
