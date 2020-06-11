@@ -26,3 +26,27 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
     color: var(--title-color);
 }
+
+.m-t-40{
+    margin-top: 40px;
+}
+
+.btn-primary {
+    width: 120px;
+    height: 50px;
+    background-color: #00acea;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.btn-danger {
+    width: 120px;
+    height: 50px;
+    background-color: #FF4D27;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px 8px 8px 8px;
+}

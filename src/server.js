@@ -96,7 +96,12 @@ server.get("/deliveryman-dashboard-history", (req, res ) => {
 server.get("/deliveryman-dashboard-edit", (req, res ) => {
     return res.render("deliveryman-dashboard-edit.html")
 })
-
+server.get("/estabelecimento-list-pedidos", (req, res ) => {
+    return res.render("estabelecimento-list-pedidos.html")
+})
+server.get("/categorias", (req, res ) => {
+    return res.render("categorias.html")
+})
 
 // ligar o servidor
 server.listen(3001)
