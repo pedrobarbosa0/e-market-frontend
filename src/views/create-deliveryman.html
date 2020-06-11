@@ -4,16 +4,16 @@
 
 {% block styles %}
     <link rel="stylesheet" href="/styles/create-point.css">
-    <link rel="stylesheet" href="/styles/deliveryman-modal.css">
+    <link rel="stylesheet" href="/styles/cadastro-concluido.css">
 {% endblock styles %}
 
 {% block content %}
     {% include "partials/page-header.html" %}
-    <form action="/savepoint" method="POST">
-        <h1>Cadastro</h1>
+    <form action="/savepoint-deliveryman" method="POST">
+        <h1>Cadastro de Entregador</h1>
         <fieldset>
             <legend>
-                <h2>Dados</h2>
+                <h2>Dados Pessoais</h2>
             </legend>
             <div class="field-group">
                 <div class="field">
@@ -35,16 +35,23 @@
                     <input type="text" name="username" required="required">
                 </div>
             </div>
-            <div class="field-group">
+            <div class="field-group2">
                 <div class="field">
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Confirme a Senha</label>
+                    <input type="password" name="confirmsenha" required="required">
                 </div>
                 <div class="field">
                     <label for="cpf">CPF</label>
                     <input type="text" name="cpf" required="required">
                 </div>
             </div>
+            <legend>
+                <h2>Dados do Veículo</h2>
+            </legend>
             <div class="field-group">
                 <div class="field">
                     <label for="marca">Marca</label>
@@ -70,16 +77,19 @@
                 </div>
             </div>
         </fieldset>
-        <button type="submit">Criar Conta</button>
+        <div class="button">
+            <button type="submit" href="/" class="cancelar">Cancelar</button>
+            <button type="submit">Criar Conta</button>
+        </div>
     </form>
 {% endblock content %}
 
 {% block modal %}
     {% if saved %}
-        {% include "partials/create-deliveryman-modal.html" %}
+        {% include "partials/cadastro-concluido.html" %}
     {% endif %}
 {% endblock modal %}
 
 {% block scripts %}
-    <script src="/scripts/create-deliveryman.js"></script>
+    <script src="/scripts/cadastro-concluido-modal.js"></script>
 {% endblock scripts %}

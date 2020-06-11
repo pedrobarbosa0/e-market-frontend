@@ -1,5 +1,5 @@
 {
-  "name": "nlw",
+  "name": "e-market",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "nunjucks": "^3.2.1"
+    "nunjucks": "^3.2.1",
+    "ts-node-dev": "^1.0.0-pre.44"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

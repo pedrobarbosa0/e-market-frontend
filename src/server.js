@@ -28,17 +28,30 @@ server.get("/create-point", (req, res ) => {
 server.get("/search", (req, res ) => {
     return res.render("search-results.html")
 })
-server.get("/cadastro-cliente", (req, res ) => {
+server.get("/create-client", (req, res ) => {
     return res.render("create-client.html")
 })
-server.get("/cadastro-entregador", (req, res ) => {
-    return res.render("create-deliveryman.html")
-})
-server.get("/cadastro-marketplace", (req, res ) => {
-    return res.render("create-marketplace.html")
+
+server.post("/savepoint-client", (req, res) => {
+
+    function afterInsertData(err) {
+        if(err) {
+            return console.log(err)
+        }
+
+        console.log("Cadastro Concluído")
+        console.log(this)  
+
+        return res.render("create-client.html", { saved: true })
+    }
+    
+    afterInsertData()
 })
 
-server.post("/savepoint", (req, res) => {
+server.get("/create-deliveryman", (req, res ) => {
+    return res.render("create-deliveryman.html")
+})
+server.post("/savepoint-deliveryman", (req, res) => {
 
     function afterInsertData(err) {
         if(err) {
@@ -49,6 +62,26 @@ server.post("/savepoint", (req, res) => {
         console.log(this)  
 
         return res.render("create-deliveryman.html", { saved: true })
+    }
+    
+    afterInsertData()
+})
+
+server.get("/create-marketplace", (req, res ) => {
+    return res.render("create-marketplace.html")
+})
+
+server.post("/savepoint-marketplace", (req, res) => {
+
+    function afterInsertData(err) {
+        if(err) {
+            return console.log(err)
+        }
+
+        console.log("Cadastro Concluído")
+        console.log(this)  
+
+        return res.render("create-marketplace.html", { saved: true })
     }
     
     afterInsertData()
