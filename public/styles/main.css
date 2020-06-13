@@ -82,3 +82,14 @@ h1, h2, h3, h4, h5, h6 {
 .m-t-100{
     margin-top: 100px;
 }
+
+.small-btn-primary {
+    width: 90px;
+    height: 30px;
+    background-color: #00acea;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px 8px 8px 8px;
+    transition: 400ms;
+}
