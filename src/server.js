@@ -20,6 +20,21 @@ server.get("/", (req, res ) => {
     return res.render("index.html")
 })
 
+
+//dashboards
+server.get("/entregador", (req, res ) => {
+    return res.render("deliveryman-dashboard.html")
+})
+server.get("/estabelecimento", (req, res ) => {
+    return res.render("estabelecimento-list-pedidos.html")
+})
+server.get("/cliente", (req, res ) => { 
+// TODO: criar template
+    return res.render("estabelecimento-list-pedidos.html")
+})
+
+
+
 // criando outras rotas
 server.get("/create-point", (req, res ) => {
     return res.render("create-point.html")
@@ -98,9 +113,6 @@ server.get("/deliveryman-dashboard-history", (req, res ) => {
 })
 server.get("/deliveryman-edit", (req, res ) => {
     return res.render("deliveryman-edit.html")
-})
-server.get("/estabelecimento-list-pedidos", (req, res ) => {
-    return res.render("estabelecimento-list-pedidos.html")
 })
 server.get("/categorias", (req, res ) => {
     return res.render("categorias.html")
