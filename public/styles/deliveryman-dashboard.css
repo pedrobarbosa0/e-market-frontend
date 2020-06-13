@@ -105,6 +105,7 @@ main .card3 p {
 }
 
 main .cards2 {
+    margin-left: 100px;
     display: grid;
     grid-template-columns:  1fr 1fr 0fr;
     gap: 24px;

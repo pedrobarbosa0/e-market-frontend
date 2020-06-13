@@ -4,9 +4,9 @@
             <h1>Login</h1>
             <a href="#">Fechar</a>
         </div>
-        <form action="/search">
+        <form onsubmit="event.preventDefault(); enviar_requisicao_login()">
             <div class="search field">
-                <input type="email" name="e-mail" placeholder="E-mail" required="required">
+                <input name="username" placeholder="Nome de Usuário" required="required">
             </div>
             <div class="search field">
                 <input type="password" name="senha" placeholder="Senha" required="required">
