@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/estabelecimento-dashboard.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header-deliveryman-dashboard.html" %}
+    <main>
+        <div class="dashboard">
+            <button class="button-dashboard">
+                <a href="/deliveryman-dashboard-history"><strong>Pedidos</strong>
+            </button>
+            <button class="button-dashboard">
+                <a href=""><strong>Produtos</strong></a>
+            </button>
+            <button class="button-dashboard">
+                <a href=""><strong>Marcas</strong></a>
+            </button>
+            <button class="button-dashboard">
+               <a href=""><strong>Categorias</strong></a>
+            </button>
+            <button class="button-dashboard">
+               <a href=""><strong>Meu Perfil</strong></a>
+            </button>
+        </div>
+        
+        <div class="cards m-t-40">
+            <h1>Listagem de pedidos</h1>
+        </div>
+        
+        <div class="cards m-t-40">
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/clock-delivery.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Pedido Pendente</h1>
+                    <h3>Jão de Souza</h3>
+                    <p>
+                        Maceió, Alagoas
+                        <br/>
+                        Amélia Rosa, Jatiúca
+                        <br/>
+                        Nº 260
+                        <br/>
+                        Data: 06/06/2020
+                        <br/>
+                        Hora: 11:26
+                    </p>
+                    <div class="button">
+                        <button class="cancelar">Rejeitar pedido</button>
+                        <button class="aceitar">Aceitar pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/clock-delivery.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Elaborando pedido</h1>
+                    <h3>Supermercado Z</h3>
+                    <p>
+                        Maceió, Alagoas
+                        <br/>
+                        Amélia Rosa, Jatiúca
+                        <br/>
+                        Nº 260
+                        <br/>
+                        Data: 06/06/2020
+                        <br/>
+                        Hora: 11:26
+                    </p>
+                    <div class="button-center">
+                        <button class="aceitar">Solicitar entregador</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/clock-delivery.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Entrega em andamento</h1>
+                    <h3>Supermercado Z</h3>
+                    <p>
+                        Maceió, Alagoas
+                        <br/>
+                        Amélia Rosa, Jatiúca
+                        <br/>
+                        Nº 260
+                        <br/>
+                        Data: 06/06/2020
+                        <br/>
+                        Hora: 11:26
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cards m-t-40">
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/completed-delivery.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Entrega Realizada</h1>
+                    <h3>Supermercado Z</h3>
+                    <p>
+                        Feedback: *****
+                        <br/>
+                        Maceió, Alagoas
+                        <br/>
+                        Amélia Rosa, Jatiúca
+                        <br/>
+                        Nº 260
+                        <br/>
+                        Data: 06/06/2020
+                        <br/>
+                        Hora: 11:26
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/completed-delivery.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Entrega Realizada</h1>
+                    <h3>Supermercado Z</h3>
+                    <p>
+                        Feedback: *****
+                        <br/>
+                        Maceió, Alagoas
+                        <br/>
+                        Amélia Rosa, Jatiúca
+                        <br/>
+                        Nº 260
+                        <br/>
+                        Data: 06/06/2020
+                        <br/>
+                        Hora: 11:26
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/delivery-not-completed.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Pedido Cancelado</h1>
+                    <h3>Supermercado Z</h3>
+                    <p>
+                        Feedback: *****
+                        <br/>
+                        Maceió, Alagoas
+                        <br/>
+                        Amélia Rosa, Jatiúca
+                        <br/>
+                        Nº 260
+                        <br/>
+                        Data: 06/06/2020
+                        <br/>
+                        Hora: 11:26
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

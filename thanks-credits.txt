@@ -1,6 +1,6 @@
-Agradecimento e créditos para a equipe da rocketseat, que foi fundamental na construção do front-end.
+Agradecimento a equipe da rocketseat, que foi fundamental na aprendizagem para construção do front-end.
 
 Ícones
-    Equipe da rocketseat
+    Equipe da rocketseat (rocketseat.com.br)
     "Icons made by Freepik from www.flaticon.com"
     "Icon made by Kiranshastry from www.flaticon.com"

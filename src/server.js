@@ -28,7 +28,7 @@ server.post("/", (req, res ) => {
     username = req.body.username
     password = req.body.password
 
-    axios.post("http://localhost:8000/token/", {
+    axios.post("http://localhost:80/token/", {
         username: username,
         password: password
     }).then(response => {
@@ -55,7 +55,7 @@ server.get("/entregador", (req, res ) => {
     return res.render("deliveryman-dashboard.html")
 })
 server.get("/estabelecimento", (req, res ) => {
-    return res.render("estabelecimento-list-pedidos.html")
+    return res.render("estabelecimento-dashboard.html")
 })
 server.get("/cliente", (req, res ) => { 
 // TODO: criar template
@@ -145,6 +145,9 @@ server.get("/deliveryman-edit", (req, res ) => {
 })
 server.get("/categorias", (req, res ) => {
     return res.render("categorias.html")
+})
+server.get("/pedido", (req, res ) => {
+    return res.render("pedido.html")
 })
 
 // ligar o servidor

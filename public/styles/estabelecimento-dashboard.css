@@ -1,7 +1,3 @@
-body {
-    background-color: white;
-}
-
 body::after {
     content: "";
     position: absolute;
@@ -51,7 +47,7 @@ main {
     margin: 48px;
 }
 main .dashboard {
-    margin-top: -10px;
+    margin-top: -10;
     display: inline-flex;
     justify-content: center;
     top: 0;
@@ -91,7 +87,6 @@ main h4 {
     margin-bottom: 32px;
     margin-right: 50px;
     margin-left: 50px;
-    margin-top: 50px;
     
 }
 
@@ -108,7 +103,6 @@ main .cards {
 .grow:hover { 
     transform: scale(1.1); 
 }
-
 
 main .card img {
     width: 100%;
@@ -197,13 +191,22 @@ main .card2 img {
     border-radius: 8px 8px 0 0;
 }
 
+body {
+    background-color: white;
+}
+
 div .button {
     display: flex;
     justify-content: space-between;
 }
 
+div .button-center {
+    display: flex;
+    justify-content: center;
+}
+
 .aceitar {
-    width: 200px;
+    width: 150px;
     height: 56px;
     background-color: #00acea;
     border-radius: 8px;
@@ -220,7 +223,7 @@ div .button {
 }
 
 .cancelar {
-    width: 100px;
+    width: 150px;
     height: 56px;
     background-color: #eb4731;
     border-radius: 8px;

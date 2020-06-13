@@ -11,32 +11,37 @@
         {% include "partials/page-header-deliveryman-dashboard.html" %}
         <main>
             <div class="dashboard">
-                <h4>
+                <button class="button-dashboard">
                     <a href="/deliveryman-dashboard-history"><strong>Entregas</strong></a>
-                </h4>
-                <h4>
+                </button>
+                <button class="button-dashboard">
                     <a href="/deliveryman-profile"><strong>Meu Perfil</strong></a>
-                </h4>
+                </button>
             </div>
-            <div class="cards">
+            <div class="cards m-t-40">
+                <h1>Listagem de pedidos</h1>
+            </div>
+            <div class="cards m-t-40">
                 <div class="card">
-                    <img src="../assets/clock-delivery.svg" alt="Novo Pedido de Entrega">
-                    <h1>Novo Pedido de Entrega</h1>
-                    <h3>Supermercado Z</h3>
-                    <p>
-                        Maceió, Alagoas
-                        <br/>
-                        Guilherme Gemballa, Jardim América
-                        <br/>
-                        Nº 260
-                        <br/>
-                        Data: 06/06/2020
-                        <br/>
-                        Hora: 11:26
-                    </p>
-                    <div class="button">
-                        <button type="submit" class="cancelar">Cancelar</button>
-                        <button type="submit" class="aceitar">Aceitar Solicitação de Entrega</button>
+                    <div class="grow">
+                        <img src="../assets/clock-delivery.svg" alt="Novo Pedido de Entrega">
+                        <h1>Novo Pedido de Entrega</h1>
+                        <h3>Supermercado Z</h3>
+                        <p>
+                            Maceió, Alagoas
+                            <br/>
+                            Guilherme Gemballa, Jardim América
+                            <br/>
+                            Nº 260
+                            <br/>
+                            Data: 06/06/2020
+                            <br/>
+                            Hora: 11:26
+                        </p>
+                        <div class="button">
+                            <button type="submit" class="cancelar">Cancelar</button>
+                            <button type="submit" class="aceitar">Aceitar Solicitação de Entrega</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,133 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/estabelecimento-dashboard.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header-deliveryman-dashboard.html" %}
+    <main>
+        <div class="dashboard">
+            <button class="button-dashboard">
+                <a href="/deliveryman-dashboard-history"><strong>Pedidos</strong>
+            </button>
+            <button class="button-dashboard">
+                <a href=""><strong>Produtos</strong></a>
+            </button>
+            <button class="button-dashboard">
+                <a href=""><strong>Marcas</strong></a>
+            </button>
+            <button class="button-dashboard">
+               <a href=""><strong>Categorias</strong></a>
+            </button>
+            <button class="button-dashboard">
+               <a href=""><strong>Meu Perfil</strong></a>
+            </button>
+        </div>
+        
+        <div class="cards m-t-40">
+            <h1>Informações do pedido</h1>
+        </div>
+        
+        <div class="cards m-t-40">
+            <div class="card">
+                <div class="grow">
+                    <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80" alt="Entrega Em andamento ou em espera">
+                    <h1>Dados do Estabelecimento</h1>
+                    <h3>Supermercado X</h3>
+                    <p>
+                        Maceió, Alagoas/AL
+                        <br/>
+                        Guilherme Gemballa, Jardim América
+                        <br/>
+                        Nº 260
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/account-icon.svg" alt="">
+                    <h1>Dados do Entregador</h1>
+                    <h3>João da Silva</h3>
+                    <p>
+                        Placa: RRRR-3333
+                        <br/>
+                        Marca: Chevrolet
+                        <br/>
+                        Modelo: Celta
+                        <br/>
+                        Cor: Preto
+                        <br/>
+                        Ano: 2008
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/money.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Informações do Pedido</h1>
+                    <h3>Valor: R$00,00</h3>
+                    <p>
+                        Maceió, Alagoas
+                        <br/>
+                        Amélia Rosa, Jatiúca
+                        <br/>
+                        Nº 260
+                        <br/>
+                        Data: 06/06/2020
+                        <br/>
+                        Hora: 11:26
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards m-t-40">
+            <h1>Produtos</h1>
+        </div>
+
+        <div class="cards m-t-40">
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/supermarket-basket.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Feijão</h1>
+                    <p>
+                        Quantidade: 1
+                        <br/>
+                        Marca Z
+                        <br/>
+                        Peso por unidade: 1kg
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/supermarket-basket.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Arroz</h1>
+                    <p>
+                        Quantidade: 1
+                        <br/>
+                        Marca Z
+                        <br/>
+                        Peso por unidade: 500g
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/supermarket-basket.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Marcarrão</h1>
+                    <p>
+                        Quantidade: 1
+                        <br/>
+                        Marca Z
+                        <br/>
+                        Peso por unidade: 1kg
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}
