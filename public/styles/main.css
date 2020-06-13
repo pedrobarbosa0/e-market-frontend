@@ -27,10 +27,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--title-color);
 }
 
-.m-t-40{
-    margin-top: 100px;
-}
-
 .btn-primary {
     width: 120px;
     height: 50px;
@@ -73,4 +69,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-t-40{
+    margin-top: 40px;
+}
+
+.m-t-100{
+    margin-top: 100px;
 }
