@@ -10,6 +10,7 @@
 
 {% block content %}
     <div class="content">
+        <span style="display:{% if message %}block{% else %}none{% endif %};" class="alert alert-danger m-t-40">{{message}}</span>
         <header>
             <div>
                 <img src="/assets/supermercado.svg" alt="Logomarca">

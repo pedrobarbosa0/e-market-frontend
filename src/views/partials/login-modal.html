@@ -4,15 +4,15 @@
             <h1>Login</h1>
             <a href="#">Fechar</a>
         </div>
-        <form onsubmit="event.preventDefault(); enviar_requisicao_login()">
+        <form action="/" method="post">
             <div class="search field">
                 <input name="username" placeholder="Nome de Usuário" required="required">
             </div>
             <div class="search field">
-                <input type="password" name="senha" placeholder="Senha" required="required">
+                <input type="password" name="password" placeholder="Senha" required="required">
             </div>
             <div>
-                <button>
+                <button type="submit">
                     <label for="entrar">Entrar</label>
                 </button>
             </div>
