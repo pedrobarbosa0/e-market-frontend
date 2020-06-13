@@ -1,9 +1,13 @@
 const express = require("express")
 const server = express()
+const bodyParser = require('body-parser');
+const axios = require('axios');
+
 
 // configurar pasta pública
 server.use(express.static("public"))
-
+server.use(bodyParser.urlencoded({ extended: false }));
+server.use(bodyParser.json());
 
 // utilizando template engine
 const nunjucks = require("nunjucks")
@@ -14,12 +18,37 @@ nunjucks.configure("src/views", {
 
 
 
-//configurar caminhos da minha aplicação
 //página inicial
 server.get("/", (req, res ) => {
     return res.render("index.html")
 })
 
+server.post("/", (req, res ) => {
+    
+    username = req.body.username
+    password = req.body.password
+
+    axios.post("http://localhost:8000/token/", {
+        username: username,
+        password: password
+    }).then(response => {
+
+        let tipo_usuario = response.data["tipo_usuario"]
+        let url = "/" + tipo_usuario;
+
+        return res.redirect(url, 302);
+
+    }).catch((error) => {
+        if (error.response.status == 401){
+            message = "Seu usuário e/ou sua senha está incorreta!"
+        }else{
+            message = "Ocorreu um erro inexperado. Já estamos trabalhando nisso!"
+        }
+
+        return res.render("index.html", {message: message})
+
+    });
+})
 
 //dashboards
 server.get("/entregador", (req, res ) => {
