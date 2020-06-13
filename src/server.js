@@ -28,7 +28,7 @@ server.post("/", (req, res ) => {
     username = req.body.username
     password = req.body.password
 
-    axios.post("http://localhost:8000/token/", {
+    axios.post("http://localhost:80/token/", {
         username: username,
         password: password
     }).then(response => {
