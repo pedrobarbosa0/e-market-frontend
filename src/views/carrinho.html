@@ -1,0 +1,161 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/estabelecimento-dashboard.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header-deliveryman-dashboard.html" %}
+    <main>
+        <div class="dashboard">
+            <button class="button-dashboard">
+                <a href="/deliveryman-dashboard-history"><strong>Pedidos</strong>
+            </button>
+            <button class="button-dashboard">
+                <a href=""><strong>Produtos</strong></a>
+            </button>
+            <button class="button-dashboard">
+                <a href=""><strong>Marcas</strong></a>
+            </button>
+            <button class="button-dashboard">
+               <a href=""><strong>Categorias</strong></a>
+            </button>
+            <button class="button-dashboard">
+               <a href=""><strong>Meu Perfil</strong></a>
+            </button>
+        </div>
+        
+        <div class="cards m-t-40">
+            <h1>Carrinho #45657</h1>
+        </div>
+        <div class="cards m-t-20">
+            <h3>Supermercado Líder</h3>
+        </div>
+        <div class="m-t-20">
+            TOTAL CARRINHO: <strong>R$ 100,00</strong>
+            <button style="margin-left: 40px;" class="btn-primary">Confirmar pedido</button>
+        </div>
+        
+        <div class="cards m-t-100">
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/itaipava.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Cerveja</h1>
+                    <h3>Itaipava</h3>
+                    <p>
+                        Valor unitário: R$ 4,00
+                        <br/>
+                        Medida (mg/ml): 350
+                        <br/>
+                        Quantidade: 100
+                        <br/>
+                        Total: <strong>R$ 400,00</strong>
+                    </p>
+                    <div class="button">
+                        <button class="aceitar">Adicionar unidade</button>
+                        <button class="cancelar">Remover unidade</button>
+                    </div>
+                    <div class="button">
+                        <button class="cancelar" style="width: 100%;">Remover do carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/yoki.png" alt="Entrega Em andamento ou em espera">
+                    <h1>Feijão</h1>
+                    <h3>Yoki</h3>
+                    <p>
+                        Valor unitário: R$ 5,00
+                        <br/>
+                        Medida (mg/ml): 1000
+                        <br/>
+                        Quantidade: 2
+                        <br/>
+                        Total: <strong>R$ 10,00</strong>
+                    </p>
+                    <div class="button">
+                        <button class="aceitar">Adicionar unidade</button>
+                        <button class="cancelar">Remover unidade</button>
+                    </div>
+                    <div class="button">
+                        <button class="cancelar" style="width: 100%;">Remover do carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/brandini.png" alt="Entrega Em andamento ou em espera">
+                    <h1>Macarrão</h1>
+                    <h3>Brandini</h3>
+                    <p>
+                        Valor unitário: R$ 2,00
+                        <br/>
+                        Medida (mg/ml): 500
+                        <br/>
+                        Quantidade: 3
+                        <br/>
+                        Total: <strong>R$ 6,00</strong>
+                    </p>
+                    <div class="button">
+                        <button class="aceitar">Adicionar unidade</button>
+                        <button class="cancelar">Remover unidade</button>
+                    </div>
+                    <div class="button">
+                        <button class="cancelar" style="width: 100%;">Remover do carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards m-t-100">
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/clock-delivery.svg" alt="Entrega Em andamento ou em espera">
+                    <h1>Azeite de oliva</h1>
+                    <h3>Gallo</h3>
+                    <p>
+                        Valor unitário: R$ 20,00
+                        <br/>
+                        Medida (mg/ml): 1000
+                        <br/>
+                        Quantidade: 1
+                        <br/>
+                        Total: <strong>R$ 20,00</strong>
+                    </p>
+                    <div class="button">
+                        <button class="aceitar">Adicionar unidade</button>
+                        <button class="cancelar">Remover unidade</button>
+                    </div>
+                    <div class="button">
+                        <button class="cancelar" style="width: 100%;">Remover do carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="grow">
+                    <img src="../assets/urbano.png" alt="Entrega Em andamento ou em espera">
+                    <h1>Arroz</h1>
+                    <h3>Urbano</h3>
+                    <p>
+                        Valor unitário: R$ 4,00
+                        <br/>
+                        Medida (mg/ml): 1000
+                        <br/>
+                        Quantidade: 3
+                        <br/>
+                        Total: <strong>R$ 12,00</strong>
+                    </p>
+                    <div class="button">
+                        <button class="aceitar">Adicionar unidade</button>
+                        <button class="cancelar">Remover unidade</button>
+                    </div>
+                    <div class="button">
+                        <button class="cancelar" style="width: 100%;">Remover do carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock content %}
